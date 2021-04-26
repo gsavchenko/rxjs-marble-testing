@@ -1,33 +1,49 @@
 {
-  "name": "marble-test",
-  "version": "0.1.0",
+  "name": "claw-frontend",
+  "version": "4.0.0",
   "private": true,
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@fortawesome/react-fontawesome": "^0.1.14",
     "@reduxjs/toolkit": "^1.5.0",
     "@testing-library/dom": ">=7.21.4",
-    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/jest-dom": "^5.11.10",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
-    "@types/jest": "^26.0.15",
     "@types/node": "^12.0.0",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
+    "connected-react-router": "^6.9.1",
+    "fp-ts": "^2.9.5",
+    "fp-ts-rxjs": "^0.6.14",
+    "history": "4.10.1",
+    "parse": "^3.2.0",
+    "ramda": "^0.27.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-is": ">= 16.8.0",
     "react-redux": "^7.2.2",
-    "react-scripts": "4.0.3",
-    "redux": ">=4 <5",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^4.0.3",
+    "redux": "^3.6.0 || ^4.0.0 >=4 <5",
     "redux-observable": "^1.2.0",
     "rxjs": "^6.6.6",
+    "styled-components": "^5.2.1",
+    "styled-system": "^5.1.5",
     "typesafe-actions": "^5.1.0",
-    "typescript": "^4.1.2",
-    "web-vitals": "^1.0.1"
+    "typescript": "^4.2.3",
+    "web-vitals": "^1.0.1",
+    "yarn": "^1.22.10"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "lint:css": "stylelint './src/**/*.ts' stylelint './src/**/*.tsx'"
   },
   "eslintConfig": {
     "extends": [
@@ -48,7 +64,41 @@
     ]
   },
   "devDependencies": {
+    "@types/enzyme": "^3.10.8",
+    "@types/jest": "^26.0.22",
+    "@types/parse": "^2.18.5",
+    "@types/ramda": "^0.27.39",
     "@types/react-redux": "^7.1.16",
-    "redux-devtools": "^3.7.0"
+    "@types/react-router": "^5.1.13",
+    "@types/styled-components": "^5.1.9",
+    "@types/styled-system": "^5.1.11",
+    "@typescript-eslint/eslint-plugin": "4",
+    "@typescript-eslint/parser": "^4.19.0",
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.6.0",
+    "enzyme": "^3.11.0",
+    "enzyme-to-json": "^3.6.1",
+    "eslint": "7",
+    "eslint-config-standard-with-typescript": "^20.0.0",
+    "eslint-plugin-import": "2",
+    "eslint-plugin-node": "11",
+    "eslint-plugin-promise": "4",
+    "eslint-plugin-react": "^7.23.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "jest-styled-components": "^7.0.3",
+    "redux-devtools": "^3.7.0",
+    "redux-devtools-extension": "^2.13.9",
+    "stylelint": "^13.12.0",
+    "stylelint-config-recommended": "^4.0.0",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-processor-styled-components": "^1.10.0",
+    "ts-jest": "^26.5.4"
+  },
+  "resolutions": {
+    "history": "4.10.1"
+  },
+  "jest": {
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
   }
 }
