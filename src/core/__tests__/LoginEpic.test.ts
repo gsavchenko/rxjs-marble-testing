@@ -1,5 +1,5 @@
 import { TestScheduler } from "rxjs/testing";
-import { loginEpic } from "../../../login/store/loginEpic";
+import { loginEpic } from "../../login/store/loginEpic";
 import { ActionsObservable, StateObservable } from "redux-observable";
 import { AjaxResponse } from "rxjs/ajax";
 import { BehaviorSubject } from "rxjs";
@@ -10,7 +10,7 @@ import {
   LoginSuccessAction,
   LOGIN_FAIL,
   LOGIN_SUCCESS
-} from "../../../login/store/loginTypes";
+} from "../../login/store/loginTypes";
 
 const testScheduler = new TestScheduler((actual, expected) => {
   expect(actual).toEqual(expected);
